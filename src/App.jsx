@@ -4,6 +4,7 @@ import Andrie from "./images/Andrie.jpg"
 import Ayhan from "./images/Ayhan.jpeg"
 import Thomas from "./images/Thomas.jpeg"
 import Eknoor from "./images/Eknoor.jpeg"
+import Demo from "./images/Demo.jpg"
 
 const Card = ({name, image, description, link, github, instagram}) => {
   return (
@@ -38,7 +39,8 @@ const Jumbotron = () => {
         </div>
       </div>
       <div className="flex justify-center p-4 mx-12 my-4">
-        <iframe width="500" height="295" src="https://www.youtube.com/embed/Sl4JvEXA-lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img src={Demo} width="500" height="295" alt="Demo"></img>
+        {/* <iframe width="500" height="295" src="https://www.youtube.com/embed/Sl4JvEXA-lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
       </div>
     </div>
   )
@@ -77,7 +79,7 @@ function App() {
             instagram="https://www.instagram.com/thomas.bombest/"
           />
           <Card
-            name="Eknoor"
+            name="Eknoor Kaur"
             image={Eknoor}
             description="Publich Health & Information Science Double Major"
             link="https://www.linkedin.com/in/eknoor-kaur-23aa50251/"
